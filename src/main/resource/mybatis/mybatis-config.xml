@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<!-- 配置驼峰命名规则，即数据库表中列名login_account自动对应javabean中的loginAccount -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!-- 开启全局延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="true" />
+		<!-- 开启属性按需加载，3.4.1及以前版本需要配置，以后版本不需要配置 -->
+		<setting name="aggressiveLazyLoading" value="false" />
+		<!-- 开启批量执行 -->
+		<setting name="defaultExecutorType" value="BATCH"/>
+	</settings>
+
+	<plugins>
+		<!-- com.github.pagehelper为PageHelper类所在包名-->
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<property name="reasonable" value="true" />
+		</plugin>
+	</plugins>
+
+</configuration>
