@@ -1,5 +1,10 @@
 # analysis_visualization_system
 ### 电商评论数据的分析与可视化系统
+使用WebMagic爬虫完成数据爬取。
+使用MapReduce编程框架编写清洗算法从Json数据中提取评论文本。
+使用百度ECharts完成数据可视化。
+涉及到的技术有：Hadoop相关、Maven、Spring、SpringMVC、Mybatis、ECharts。
+实现的功能：对电商评论数据的采集、清洗、存储、分析与可视化。
 ### 1.项目介绍
 本系统基于Hadoop平台，使用Maven进行项目管理，基于ssm框架开发的项目，使用mysql数据库，前端采用JQuery+Bootstrap+ECharts展示数据。
 
